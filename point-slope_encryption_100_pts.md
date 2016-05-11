@@ -26,7 +26,7 @@ def secret_func(x):
 
 We probably could have reversed the encryption function if we spent some more time on it, but didn't bother since we thought of an easier way to do it. (at first glance, it seems to be linearizing the function and returning the x,y of the linearized mapping)
 
-In order to decrypt the message, we can simply encrypt every possible character (a-z,A-Z, 0-9, {}). To decrypt, we simply iterate through every point in points.txt, and find the character whose encrypted point most closely matches it!
+In order to decrypt the message, we can simply encrypt every possible character (a-z,A-Z, 0-9, {}). To decrypt, we iterate through every point in points.txt, and find the character whose encrypted point most closely matches it!
 
 ```
 validchars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ{}0123456789_!@#$%^&*()'
@@ -59,7 +59,7 @@ for ln in f:
 print repr(flag)
 ```
 
-Running this code gives us the flag as ```fl{gucslI_1z_fuN}```, which is close but obviously wrong. We then simply looked at the next closest matching characters for each point, and managed to reverse it to ```flag{c4lC_Iz_fuN}```
+Running this code gives us the flag as ```fl{gucslI_1z_fuN}```, which is close but obviously wrong. We then looked at the next closest matching characters for each point, and managed to reverse it to ```flag{c4lC_Iz_fuN}```
 
 ## Flag
 ```flag{c4lC_Iz_fuN}```
