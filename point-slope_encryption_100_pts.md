@@ -14,7 +14,7 @@ That ‘s’ function seems like it does something familiar…
 ---
 
 ## Solution
-The 's' function in encrypt.py approximates the derivative at a point of a function. This should be obvious to anyone who has taken an introductory calculus course, as it is simply computing the limit definition of the derivative: $$ f'(x) = \lim_{\Delta x\to\infty} \frac{f(x+\Delta x)-f(x)}{\Delta x}$$
+The 's' function in encrypt.py approximates the derivative at a point of a function. This should be obvious to anyone who has taken an introductory calculus course, as it is simply computing the limit definition of the derivative: $$ f'(x) = \lim \limits_{\Delta x\to\infty} \frac{f(x+\Delta x)-f(x)}{\Delta x}$$
 
 We see that the function 'f' is the secret_func, which we don't have. However, looking in the handout.txt file, we have ```df/dx = 1651/(12pi * cosx + 5pi * sinx)```. We can integrate this function to recover secret_func! Using wolframalpha, we get:
 
