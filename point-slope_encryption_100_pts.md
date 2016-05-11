@@ -24,7 +24,7 @@ def secret_func(x):
 ```
 (abs functions are added to make sure the function doesn't error when taking logs of negative values)
 
-We probably could have reversed the encryption function if we spent some more time on it, but didn't bother since we thought of an easier way to decrypt the message. (at first glance, the encryption function seems to be linearizing the secret_func and returning the x,y of the linearized mapping)
+We probably could have reversed the encryption function if we spent some more time on it, but didn't bother since we thought of an easier way to decrypt the message. (at first glance, the encryption function seems to be linearizing the secret_func and returning the x,y of the linearized mapping, but I'm not entirely sure)
 
 In order to decrypt the message, we can simply encrypt every possible character (a-z,A-Z, 0-9, {}). To decrypt, we iterate through every point in points.txt, and find the character whose encrypted point most closely matches it!
 
