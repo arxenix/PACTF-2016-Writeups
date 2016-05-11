@@ -59,7 +59,7 @@ for ln in f:
 print repr(flag)
 ```
 
-Running this code gives us the flag as ```fl{gucslI_1z_fuN}```, which is close but obviously wrong. We then looked at the next closest matching characters for each point, and managed to reverse it to ```flag{c4lC_Iz_fuN}```
+Running this code gives us the flag as ```fl{gucslI_1z_fuN}```, which is close but obviously wrong. We then looked at the next closest matching characters for each point (printed out by the above program), and managed to correct it to ```flag{c4lC_Iz_fuN}```
 
 ## Flag
 ```flag{c4lC_Iz_fuN}```
