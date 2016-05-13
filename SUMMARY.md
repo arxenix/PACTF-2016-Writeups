@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Round 1: Crypto](round_1_crypto.md)
-   * [Phillips Decryption Service](phillips_decryption_service.md)
+   * [Phillips Decryption Service (70 pts)](phillips_decryption_service.md)
    * [Point-Slope Encryption (100 pts)](point-slope_encryption_100_pts.md)
 * [Round 2: Binary](round_2_binary.md)
 * [Round 3: Web](round_3_web.md)
